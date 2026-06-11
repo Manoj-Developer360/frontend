@@ -44,3 +44,21 @@ console.log(f)
 var e = 17
 var f = --e       
 console.log(f)
+
+
+// Data Type
+
+console.log(typeof(10))                // Number
+console.log(typeof("Apple"))           // String
+console.log(typeof("10"))              // String
+
+var m 
+console.log(m)                        // undefined
+
+var n = "true"
+console.log(n)                        // boolean
+
+var o = "false"
+console.log(o)                       // boolean
+
+console.log(typeof(true))            // boolean
