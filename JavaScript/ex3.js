@@ -55,3 +55,43 @@ function favourite () {
 }
 
 favourite()
+
+
+// Function Parameters 
+
+function multiply (a,b){
+    console.log(a*b)
+}
+multiply(5,5)
+
+// Exercise
+
+// Create a function called area()
+// This function should get 2 values as parameter(length, breadth)
+// Pass two values to the function and print the result
+
+function area (l,b){
+    console.log("Area is : "+(l*b))
+}
+area(4,5)
+
+
+//Return Type Functions 
+
+
+function myname ()
+{
+    return ("Manoj")
+}
+var a = myname()
+console.log(a)
+
+// Create a function called add which should take 2 parameters a and b
+// and it should return the addition of two variables
+
+function add (a,b)
+{
+    return (a+b)
+}
+var addition = add(10,5)
+console.log(addition)
