@@ -1,0 +1,89 @@
+<!-- What is DOM Manipulation ? -->
+
+<!-- DOM manipulation refers to the process of programmatically modifying the content, structure, or style of a web page's 
+Document Object Model (DOM) using scripting languages like JavaScript. 
+Developers can add, remove, or modify elements, attributes, and text within the DOM to create dynamic and interactive web applications. 
+This allows web pages to respond to user interactions, update content dynamically, and provide a more engaging user experience. -->
+
+<p id="one">
+    Hello
+</p>
+
+<script>
+    // select paragraph tag using id
+      var para = document.getElementById("one")     // store entire p tag all in the para variable 
+      console.log(para.textContent)                 // here console output is one the p tag value (Hello)
+      para.textContent = "Bye"                      // here change the P Value in the Web page
+</script>
+
+
+
+
+<!-- DOM Manipulation
+Selecting and Manipulating Elements Using ID
+Exercise:
+- Create h1 tag with ID "title" and Set its value to Hello World
+- Select the h1 tag using document.getElementById() and change "Hello world" to "Bye World" -->
+
+<h1 id="title">
+    Hello World
+</h1>
+
+<script>
+    var head = document.getElementById("title")
+    console.log(head.textContent)
+    head.textContent = "Bye World"
+</script>
+
+
+<!-- 
+What is an Event and Event handlers ?
+
+An event in JavaScript is an action or occurrence that happens
+within a web page, such as a user's interaction (clicking a button) or
+a page loading.
+
+An event handler in JavaScript is a function that responds to an
+event when it occurs. It listens for specific events and executes
+code to perform actions based on those events, creating interactive
+and dynamic web applications. -->
+
+<h1 id="title">
+    Hello World
+</h1>
+<button onclick="change()">Change</button>
+
+<script>
+    var h1 = document.getElementById("title")
+    console.log(h1.textContent)
+
+    function change(){
+        h1.textContent = "Bye World"
+    }
+</script> 
+
+<!-- 
+Exercise
+. Create 2 input box with id "num1" and "num2"
+. On a button click take the two values from both the boxes and store
+it in a variable called "total"
+. Create a p tag with id "result". Everytime user click add button the
+added result should be displayed in p tag -->
+
+<input id="num1">
+<input id="num2">
+<button onclick="change()">Add</button>
+<p id="result">Result</p>
+
+<script>
+    var box1 = document.getElementById("num1")
+    var box2 = document.getElementById("num2")
+    var result = document.getElementById("result")
+
+    function change(){
+        var box1value = Number(box1.value)
+        var box2value = Number(box2.value)
+        var total =  box1value + box2value
+        result.textContent = total
+    }
+</script>
